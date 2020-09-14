@@ -1,4 +1,8 @@
-# Introduction to R Module 1 
+# Introduction to R Module 1
+
+Rodrigo Esteves de Lima Lopes \
+*Campinas State University* \
+[rll307@unicamp.br](mailto:rll307@unicamp.br)
 
 This is the ongoing first module of R applied to language studies. Please feel free to help in the codes and tutorial improvement. If you see any mistake or possibility of code rewriting, please let me know. 
 
@@ -13,13 +17,76 @@ This module is going to cover some tools for corpus and discourse analysis using
 These modules are under construction, so some themes or tutorials might change during this semester. But in a nutshell, it intends to cover:
 
 1. Tools for course
-  * This set of tutorials brings the tools needed for my class on its online version.
+     * This set of tutorials brings the tools needed for my class on its online version.
 1. First steps
-  * Basic lessons for understanding R and its integration with GUIs
+     * Basic lessons for understanding R and its integration with GUIs
 1. Data analysis projects
-  * Some hands-on projects on linguistic data analysis. 
+     * Some hands-on projects on linguistic data analysis, including:
+        * Data organisation and processing
+        * Data scraping from websites and social media. 
 
 Please note that:
 
-- Some packages will need to be installed during the analysis. So make sure you have the appropriate system permission
+- It is not a progressive set of tutorials. It starts on the basics, but then it becomes more problem-oriented. So sometimes basic and more intermediate elements of code are bought together. 
+- Some packages will need to be installed during the analysis. So make sure you have the appropriate system permission.
 - The course is mostly directed to language data, but other areas might benefit from it. 
+
+If you have any doubts or ideas, please drop me a line at [rll307@unicamp.br](mailto:rll307@unicamp.br)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
