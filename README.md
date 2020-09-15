@@ -1,10 +1,10 @@
-# Introduction to R Module 1
+# Introduction
 
 Rodrigo Esteves de Lima Lopes \
 *Campinas State University* \
 [rll307@unicamp.br](mailto:rll307@unicamp.br)
 
-This is the ongoing first module of R applied to language studies. Please feel free to help in the codes and tutorial improvement. If you see any mistake or possibility of code rewriting, please let me know. 
+This is the ongoing first try of a R course applied to language studies. Please feel free to help in the codes and tutorial improvement. If you see any mistake or possibility of code rewriting, please let me know. 
 
 Initially, it was thought as a set of lessons to my graduate students at [IEL](http://www.iel.unicamp.br)/[UNICAMP](https://www.unicamp.br/unicamp/). However, the possibility of further discussion with fellow researchers drove me to let it open to the community. So, if you are not a MA student or a PhD student/candidate under my supervision, you might skip the first module. 
 
