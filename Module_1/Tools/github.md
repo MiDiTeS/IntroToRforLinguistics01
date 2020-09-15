@@ -1,5 +1,9 @@
 # Github
 
+Rodrigo Esteves de Lima Lopes \
+*Campinas State University* \
+[rll307@unicamp.br](mailto:rll307@unicamp.br)
+
 ## Introduction
 
 **GitHub** is a tool for hosting code and collaborating. It allows us to create repositories so we can upload our code for the community and share it. Here we are using a free version of **GitHub** for education.

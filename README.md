@@ -24,12 +24,17 @@ These modules are under construction, so some themes or tutorials might change d
      * Some hands-on projects on linguistic data analysis, including:
         * Data organisation and processing
         * Data scraping from websites and social media. 
+        
+# Assignments
 
-Please note that:
+In the assignment section, you will find a set of tasks to be performed. Such tasks validate our course. There is at least one task for each module; in some cases, there might be more. 
+
+### Please note that
 
 - It is not a progressive set of tutorials. It starts on the basics, but then it becomes more problem-oriented. So sometimes basic and more intermediate elements of code are bought together. 
 - Some packages will need to be installed during the analysis. So make sure you have the appropriate system permission.
 - The course is mostly directed to language data, but other areas might benefit from it. 
+- The assignments are mandatory. 
 
 If you have any doubts or ideas, please drop me a line at [rll307@unicamp.br](mailto:rll307@unicamp.br)
 
