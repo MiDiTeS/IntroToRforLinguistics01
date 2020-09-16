@@ -17,7 +17,7 @@ As we can see, the same elements are in the PyCharm IDE, but are located in diff
 
 ![PyCharm Interface](./images/py1.png)
 
-During the coding (classes and tutorials), I will refer to these IDEs tabs by their names). 
+During the coding (classes and tutorials), I will refer to these IDEs tabs by their names).
 
 Rodrigo Esteves de Lima Lopes \
 *Campinas State University* \
