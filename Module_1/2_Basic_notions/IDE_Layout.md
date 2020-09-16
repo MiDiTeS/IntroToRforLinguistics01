@@ -15,7 +15,7 @@ Since my IDEs are highly customised, I am editing some screenshots I got from th
 
 As we can see, the same elements are in the PyCharm IDE, but are located in different places:
 
-![PyCharm Interface](./images/Py1.png)
+![PyCharm Interface](./images/py1.png)
 
 During the coding (classes and tutorials), I will refer to these IDEs tabs by their names). 
 
