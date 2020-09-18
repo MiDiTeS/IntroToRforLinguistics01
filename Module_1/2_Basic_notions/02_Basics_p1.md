@@ -1,15 +1,6 @@
----
-title: "Basic concepts with R (part 1)"
-author: |
-  | Rodrigo Esteves de Lima-Lopes 
-  | State University of Campinas 
-  | rll307@unicamp.br
-output: 
-  html_document:
-    keep_md: true
----
-
-
+Rodrigo Esteves de Lima Lopes \
+*Campinas State University* \
+[rll307@unicamp.br](mailto:rll307@unicamp.br)
 
 # Introduction
 In this section we will try to do get some introductory concepts on R language, mostly getting some basic conventions. 
