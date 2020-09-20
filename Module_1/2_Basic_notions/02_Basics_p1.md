@@ -232,7 +232,7 @@ typeof(repetition)
 ## [1] "character"
 ```
 
-
+# In a nutshell
 
 These commands taught us a couple of things:
 

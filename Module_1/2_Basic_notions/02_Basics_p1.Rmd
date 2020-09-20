@@ -1,12 +1,8 @@
 ---
 title: "Basic concepts with R (part 1)"
-author: |
-  | Rodrigo Esteves de Lima-Lopes 
-  | State University of Campinas 
-  | rll307@unicamp.br
-output: 
-  html_document:
-    keep_md: true
+author: "| Rodrigo Esteves de Lima-Lopes \n| State University of Campinas \n| rll307@unicamp.br\n"
+output:
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -14,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Introduction
-In this section we will try to do get some introductory concepts on R language, mostly getting some basic conventions. 
+In this tutorial we will try to do get some introductory concepts on R language, mostly getting some basic conventions. 
 
 # Some very basic stuff
 
@@ -73,6 +69,7 @@ typeof(repetition)
 ```
 
 
+# In a nutshell
 
 These commands taught us a couple of things:
 
