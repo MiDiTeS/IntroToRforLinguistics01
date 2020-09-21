@@ -1,8 +1,11 @@
 ---
 title: "Basic concepts with R (part 1)"
 author: "| Rodrigo Esteves de Lima-Lopes \n| State University of Campinas \n| rll307@unicamp.br\n"
-output:
-  pdf_document: default
+output: 
+  pdf_document:
+    number_sections: yes
+    toc: yes
+    keep_md: true
 ---
 
 ```{r setup, include=FALSE}
@@ -85,7 +88,8 @@ These commands taught us a couple of things:
   - **Double**: numbers with decimals
   - **Complex**: numbers with scientific notation
   - **Character**: words or letters
-  - **Logical** (or Boolean): meanings between TRUE (true) and FALSE (false)
+  - **Logical** (or Boolean): meaning *TRUE* or *FALSE*
+  - **Dates**: numbers representing dates
   - **Vector**: ordered sequence of numbers or characters
 1. Commands in R are always a sequence of letters followed by "()" like `seq()`
 1. The way to tell R a value ought to be understood as a  character is to write between quotations marks 

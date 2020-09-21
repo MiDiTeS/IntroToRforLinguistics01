@@ -2,8 +2,9 @@ Rodrigo Esteves de Lima Lopes \
 *Campinas State University* \
 [rll307@unicamp.br](mailto:rll307@unicamp.br)
 
+
 # Introduction
-In this section we will try to do get some introductory concepts on R language, mostly getting some basic conventions. 
+In this tutorial we will try to do get some introductory concepts on R language, mostly getting some basic conventions. 
 
 # Some very basic stuff
 
@@ -232,6 +233,7 @@ typeof(repetition)
 ## [1] "character"
 ```
 
+
 # In a nutshell
 
 These commands taught us a couple of things:
@@ -248,7 +250,8 @@ These commands taught us a couple of things:
   - **Double**: numbers with decimals
   - **Complex**: numbers with scientific notation
   - **Character**: words or letters
-  - **Logical** (or Boolean): meanings between TRUE (true) and FALSE (false)
+  - **Logical** (or Boolean): meaning *TRUE* or *FALSE*
+  - **Dates**: numbers representing dates
   - **Vector**: ordered sequence of numbers or characters
 1. Commands in R are always a sequence of letters followed by "()" like `seq()`
 1. The way to tell R a value ought to be understood as a  character is to write between quotations marks 
