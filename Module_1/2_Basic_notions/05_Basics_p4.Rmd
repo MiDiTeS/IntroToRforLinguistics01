@@ -22,7 +22,7 @@ Data frames are matrices like two-dimensional rectangular structures. However, t
 
 
 
-```{r, table_1,echo=FALSE}
+```{r, table_1}
 
 names <- c('Astolfo', "Eleutério", "Alarico", "Genésia","Gioconda","Ondina")
 birthdays <-as.Date(c("1907-06-22","1987-07-12","1941-11-10", "1940-11-15","1910-07-03","1982-06-21"))
