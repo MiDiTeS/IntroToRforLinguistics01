@@ -21,6 +21,7 @@
 │  ├── README.md
 │  ├── Rmarkdown.pdf
 │  └── rstudio.pdf
+├── Course_Structure.txt
 ├── LICENSE
 ├── Module_1
 │  ├── 1_Tools
@@ -63,5 +64,4 @@
 │  │  │  └── rstudio1.png
 │  │  └── README.md
 │  └── README.md
-├── README.md
-└── teste
+└── README.md
