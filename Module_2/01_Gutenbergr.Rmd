@@ -232,7 +232,7 @@ Her name is mentioned 60 times in all the positions we can see listed above. Let
 plot(marcella.f)
 ```
 
-Some conclutions:
+Some conclusions:
 
 1. Marcella does not appears right at the begging of the novel
 1. She stops being referenced by her name 1/3 to the book's end

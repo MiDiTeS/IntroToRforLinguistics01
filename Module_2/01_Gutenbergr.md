@@ -359,7 +359,7 @@ plot(marcella.f)
 
 ![Marcella's Plot](01_Gutenberg_files/figure-latex/unnamed-chunk-11-1.pdf)
 
-Some conclutions:
+Some conclusions:
 
 1. Marcella does not appears right at the begging of the novel
 1. She stops being referenced by her name 1/3 to the book's end
