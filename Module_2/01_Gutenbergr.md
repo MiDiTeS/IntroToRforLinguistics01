@@ -357,7 +357,7 @@ Her name is mentioned 60 times in all the positions we can see listed above. Let
 plot(marcella.f)
 ```
 
-![Marcella's Plot](01_Gutenberg_files/figure-latex/unnamed-chunk-11-1.pdf)<!-- --> 
+![Marcella's Plot](01_Gutenberg_files/figure-latex/unnamed-chunk-11-1.pdf)
 
 Some conclutions:
 
@@ -415,7 +415,7 @@ plot(w.count.v, main="Ocorrências de Marcella",
      xlab="Novel Time", ylab="Marcella", type="h", ylim=c(0,1), yaxt='n')
 ```
 
-![Marcella's Final Plot](01_Gutenberg_files/figure-latex/unnamed-chunk-16-1.pdf)<!-- --> 
+![Marcella's Final Plot](01_Gutenberg_files/figure-latex/unnamed-chunk-16-1.pdf) 
 
 
   Let us check which are the most frequent words? Now without grammatical words?
@@ -495,7 +495,7 @@ geral.list %>%
   theme(axis.text.x = element_text(angle=65, vjust=0.6))
 ```
 
-![Wordlist plot](01_Gutenberg_files/figure-latex/unnamed-chunk-21-1.pdf)<!-- --> 
+![Wordlist plot](01_Gutenberg_files/figure-latex/unnamed-chunk-21-1.pdf)
 
 
 
