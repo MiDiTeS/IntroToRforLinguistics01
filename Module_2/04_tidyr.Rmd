@@ -142,8 +142,8 @@ wide.2
 
 The main arguments of `spread()` are:
 
-`key`: The name of the column where the headings are.
-`value`: The values that will populate the rows.
+- `key`: The name of the column where the headings are.
+- `value`: The values that will populate the rows.
 
 A good visual representation of `spread()` would be:
 
