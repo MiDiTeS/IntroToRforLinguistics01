@@ -1,21 +1,12 @@
-.
 ├── Assignments
 │  ├── Module_1
-│  │  ├── Basic_notions
-│  │  │  ├── 02_basics.md
-│  │  │  ├── 03_Vectors.md
-│  │  │  ├── 04_matrices.md
-│  │  │  ├── 05_DataFrames.md
-│  │  │  └── 06_lists.md
-│  │  ├── README.md
-│  │  └── Tools
-│  │     └── 01_tools.md
 │  ├── Module_2
-│  │  └── README.md
 │  └── README.md
 ├── CheatSheets
 │  ├── Base.pdf
 │  ├── basicR.pdf
+│  ├── data-import.pdf
+│  ├── data-wrangling-cheatsheet.pdf
 │  ├── git-cheat-sheet-education.pdf
 │  ├── markdown-cheatsheet-online.pdf
 │  ├── README.md
@@ -25,43 +16,27 @@
 ├── LICENSE
 ├── Module_1
 │  ├── 1_Tools
-│  │  ├── 1_R.mv
-│  │  ├── 2_IDE.md
-│  │  ├── 3_github.md
-│  │  ├── images
-│  │  │  ├── cran01.png
-│  │  │  ├── mac.png
-│  │  │  ├── R01.png
-│  │  │  ├── R02.png
-│  │  │  ├── rtools.png
-│  │  │  └── rtools0.png
-│  │  └── README.md
 │  ├── 2_Basic_notions
-│  │  ├── 01_IDE_Layout.md
-│  │  ├── 02_Basics.md
-│  │  ├── 02_Basics.pdf
-│  │  ├── 02_Basics.R
-│  │  ├── 02_Basics.Rmd
-│  │  ├── 03_Vectors.md
-│  │  ├── 03_Vectos.pdf
-│  │  ├── 03_Vectos.R
-│  │  ├── 03_Vectos.Rmd
-│  │  ├── 04_matrices.md
-│  │  ├── 04_Matrices.pdf
-│  │  ├── 04_Matrices.R
-│  │  ├── 04_Matrices.Rmd
-│  │  ├── 05_DataFrames.md
-│  │  ├── 05_DataFrames.pdf
-│  │  ├── 05_DataFrames.R
-│  │  ├── 05_DataFrames.Rmd
-│  │  ├── 06_lists.md
-│  │  ├── 06_lists.pdf
-│  │  ├── 06_lists.R
-│  │  ├── 06_lists.Rmd
-│  │  ├── images
-│  │  │  ├── DollarSign.png
-│  │  │  ├── py1.png
-│  │  │  └── rstudio1.png
-│  │  └── README.md
 │  └── README.md
+├── Module_2
+│  ├── 01_Gutenberg.md
+│  ├── 01_Gutenberg.pdf
+│  ├── 01_Gutenberg.R
+│  ├── 01_Gutenberg.Rmd
+│  ├── 01_Gutenberg_files
+│  ├── 02_dplyr.md
+│  ├── 02_dplyr.pdf
+│  ├── 02_dplyr.R
+│  ├── 02_dplyr.Rmd
+│  ├── 03_Gutenberg.md
+│  ├── 03_Gutenberg.pdf
+│  ├── 03_Gutenberg.R
+│  ├── 03_Gutenberg.Rmd
+│  ├── 03_Gutenberg_files
+│  ├── 04_tidyr.md
+│  ├── 04_tidyr.pdf
+│  ├── 04_tidyr.Rmd
+│  ├── images
+│  ├── README.md
+│  └── stop_port2.csv
 └── README.md
