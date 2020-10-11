@@ -131,7 +131,7 @@ ggplot(machado.palavras, aes(n/total, fill = title)) +
 ## Warning: Removed 3 rows containing missing values (geom_bar).
 ```
 
-![plot_01](03_Gutenberg_files/figure-latex/plot01-1.pdf)
+![plot_01](03_Gutenberg_files/figure-latex/plot01-1.jpg)
 
 ## Raking our lexis
 
@@ -156,7 +156,7 @@ machado.palavras.rank  %>%
   scale_y_log10()
 ```
 
-![plot02](03_Gutenberg_files/figure-latex/plot2-1.pdf)<!-- --> 
+![plot02](03_Gutenberg_files/figure-latex/plot2-1.jpg)<!-- --> 
 
 Now let's calculate the regression of those words. This will help us to know whether, within the repetitions we see, such averages are expected or not.
 
@@ -191,7 +191,7 @@ machado.palavras.rank %>%
   scale_y_log10()
 ```
 
-![plot03](03_Gutenberg_files/figure-latex/unnamed-chunk-1-1.pdf)<!-- --> 
+![plot03](03_Gutenberg_files/figure-latex/unnamed-chunk-1-1.jpg)<!-- --> 
 
 
 The black line gives us the normality. We observe that few words are above or below it, with variations in each work.
@@ -223,7 +223,7 @@ machado.palavras.imp  %>%
 ## Selecting by tf_idf
 ```
 
-![plot04](03_Gutenberg_files/figure-latex/final_plot-1.pdf)<!-- --> 
+![plot04](03_Gutenberg_files/figure-latex/final_plot-1.jpg)<!-- --> 
 
 
 
