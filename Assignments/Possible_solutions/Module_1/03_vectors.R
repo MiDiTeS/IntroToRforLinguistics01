@@ -19,7 +19,7 @@ subtraction.vectors <- vector.2-vector.1
 
 #Exponentiation
 exp1<-vector.1^2
-exp3<-vector.2^3
+exp2<-vector.2^3
 
 
 
