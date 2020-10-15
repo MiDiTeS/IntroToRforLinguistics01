@@ -2,16 +2,27 @@
 
 ##Column names
 column.names <- paste0(rep("col.", 20),1:20)
+View(column.names)
 
 ##Column Rows
-row.names <- paste0(rep("row.", 25),1:25)
+row.names <- paste0(rep("row.", 25),seq(1,25,1))
+View(row.names)
 
 ## Matrix (no names yet)
+
+# 1
 my.matrix <- matrix(1:500, nrow = 25, byrow = TRUE)
+# 2
+my.matrix <- matrix(seq(1,500,1), nrow = 25, byrow = TRUE)
+
+#3
+number.02<-seq(1,500,1)
+my.matrix<- matrix(number.02,nrow = 25, byrow = TRUE)
 
 ## Renaming
-colnames(my.matrix )<-column.names
+colnames(my.matrix)<-column.names
 rownames(my.matrix) <- row.names 
+View(my.matrix)
 
 ## 5 operations
 op1<-my.matrix[1,1]+my.matrix[15,6]
