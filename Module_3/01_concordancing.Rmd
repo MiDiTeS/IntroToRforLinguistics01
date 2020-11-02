@@ -84,7 +84,7 @@ A good example how todo so is presented by this video:
 [![How to set the working directory in RStudio](./images/video_preview.png)](https://www.youtube.com/watch?v=QzSV8wvA1Do "How to set the working directory in RStudio")
 
 
-`input.dir <- "data"` in an ordinary command that will make the directory `data` to be represented in one variable, while `my.files <- dir(input.dir, "\\.txt$")` will read all *txt* files in "data" as a variable. 
+`input.dir <- "data"` is an ordinary command that will make the directory `data` to be represented in one variable, while `my.files <- dir(input.dir, "\\.txt$")` will read all *txt* files in "data" as a variable. 
 
 Note that we will be reading the files from inside our computer. 
 
