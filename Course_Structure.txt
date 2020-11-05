@@ -13,6 +13,11 @@
 │  ├── Module_2
 │  │  ├── 01_Gutenberg.md
 │  │  ├── 02_dplyr.md
+│  │  ├── 04_tidyr.md
+│  │  ├── 05_TidyText.md
+│  │  └── README.md
+│  ├── Module_3
+│  │  ├── 01_concordancing.md
 │  │  └── README.md
 │  ├── Possible_solutions
 │  │  └── Module_1
@@ -127,13 +132,19 @@
 │  ├── README.md
 │  └── stop_port2.csv
 ├── Module_3
+│  ├── 00_functions.R
 │  ├── 01_concordancing.md
 │  ├── 01_concordancing.pdf
 │  ├── 01_concordancing.R
 │  ├── 01_concordancing.Rmd
+│  ├── 02_concordancing.md
+│  ├── 02_concordancing.pdf
+│  ├── 02_concordancing.R
+│  ├── 02_concordancing.Rmd
 │  ├── data
 │  │  ├── austen.txt
 │  │  └── melville.txt
-│  └── images
-│     └── video_preview.png
+│  ├── images
+│  │  └── video_preview.png
+│  └── README.md
 └── README.md
