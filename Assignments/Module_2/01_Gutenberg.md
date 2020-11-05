@@ -5,7 +5,7 @@
 
 # Project Gutemberg
 
-## Excersices for this section
+## Exercises for this section
 
 1. Choose a book at project Gutenberg
 2. Download it
