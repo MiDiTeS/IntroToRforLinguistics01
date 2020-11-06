@@ -226,7 +226,7 @@ A good visual representation of `spread()` would be:
 
 ## Separate
 
-`Speparate()` breaks expressions in a same column using a character as basis. For example, in our dataset:
+`Separate()` breaks expressions in a same column using a character as basis. For example, in our dataset:
 
 
 ```r
