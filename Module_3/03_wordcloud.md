@@ -7,8 +7,6 @@ Rodrigo Esteves de Lima Lopes \
 
 # Introduction 
 
-# Introduction 
-
 In this tutorial we are going to
 
 1. Have our first introduction to the package `tm`
