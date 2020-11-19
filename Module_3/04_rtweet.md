@@ -86,7 +86,7 @@ Let us make some search using `stream_tweets`:
 
 
 ```r
-SP.T1 <- stream_tweets('#VerdadeDosFatos', 
+stream_tweets('#VerdadeDosFatos', 
                        timeout = 60, #in seconds
                        file_name='verdade_01', # it saves a file, not a variable
                        parse=TRUE)
