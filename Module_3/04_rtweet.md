@@ -28,6 +28,7 @@ First we are going to get some insights on what is trending in our location. So 
 
 
 ```r
+library(rtweet)
 my.trends<-trends_available()
 ```
 
