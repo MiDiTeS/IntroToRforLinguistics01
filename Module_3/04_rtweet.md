@@ -75,7 +75,7 @@ Again we have a table. But please, mind you it is a snapshot of Twitter at the m
 In my data, the hashtag `#VerdadeDosFatos` called my attention, so I will search for it. There are two ways to do so:
 
 1. `stream_tweets()`: searches tweets for a given period of time
-1. `search_tweets()`:  searches tweets until it gets specified number of occurrences
+1. `search_tweets()`:  searches tweets and it gets specified number of occurrences
 
 ### stream_tweets
 
