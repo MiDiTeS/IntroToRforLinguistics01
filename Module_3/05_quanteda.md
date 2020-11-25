@@ -4,8 +4,6 @@ Rodrigo Esteves de Lima Lopes \
 *Campinas State University* \
 [rll307@unicamp.br](mailto:rll307@unicamp.br)
 
-
-
 # Introduction
 
 [Quanteda](https://quanteda.io/) is a package for managing and analyse text quantitatively. It is quite easy to use and will bring us a number of interesting functions. 
@@ -13,12 +11,12 @@ Rodrigo Esteves de Lima Lopes \
 ## You will need:
 
 1. The package [`Quanteda`](https://quanteda.io/), which can be installed using [RStudio](http://www.sthda.com/english/wiki/installing-and-using-r-packages)
-1. The package `rtweet`, we installed (last tutorial)[https://github.com/MiDiTeS/intro_to_R1/blob/master/Module_3/04_rtweet.md]. 
+1. The package `rtweet`, we installed [last tutorial](https://github.com/MiDiTeS/intro_to_R1/blob/master/Module_3/04_rtweet.md). 
 1. Package `DT` for viewing the KWIC inside R. 
 
 # Scraping Tweets
 
-I will download two [Twitter](https://twitter.com/) timelines: [@GuilhermeBoulos](https://twitter.com/GuilhermeBoulos) and [@brunocovas](https://twitter.com/brunocovas). Both are candidates in the second round of São Paulo's mayor elections. 
+I will download two [Twitter](https://twitter.com/) timelines: [GuilhermeBoulos](https://twitter.com/GuilhermeBoulos) and [brunocovas](https://twitter.com/brunocovas). Both are candidates in the second round of São Paulo's mayor elections. 
 
 
 ```r
