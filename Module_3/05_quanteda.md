@@ -98,21 +98,14 @@ head(boulos.dfm,5)
 ```
 
 ```
-## Document-feature matrix of: 5 documents, 11,372 features (99.8% sparse) and 89 docvars.
+## Document-feature matrix of: 5 documents, 11,372 features (99.9% sparse) and 89 docvars.
 ##        features
-## docs    viola catarina rossi violões gustavo medeiros arranjo sopros sérgio
-##   text1     1        1     1       1       1        1       1      1      1
-##   text2     0        0     0       0       0        0       0      0      1
-##   text3     0        0     0       0       0        0       0      0      0
-##   text4     0        0     0       0       1        1       0      0      0
-##   text5     0        0     0       0       0        0       0      0      0
-##        features
-## docs    wontroba
-##   text1        1
-##   text2        1
-##   text3        0
-##   text4        0
-##   text5        0
+## docs    psdb entrou vale tudo folha revela assessora gabinete covas enviou
+##   text1    1      1    1    1     1      1         1        1     1      1
+##   text2    0      0    0    0     0      0         0        0     0      0
+##   text3    0      0    0    0     0      0         0        0     0      0
+##   text4    0      0    0    0     0      0         0        0     0      0
+##   text5    0      0    0    0     0      0         0        0     1      0
 ## [ reached max_nfeat ... 11,362 more features ]
 ```
 
@@ -122,22 +115,22 @@ head(all.dfm,5)
 ```
 
 ```
-## Document-feature matrix of: 5 documents, 16,944 features (99.9% sparse) and 89 docvars.
+## Document-feature matrix of: 5 documents, 16,947 features (99.9% sparse) and 89 docvars.
 ##        features
-## docs    legados importantes pandemia é valorização ciência fundamental apoiar
-##   text1       1           1        1 2           1       1           1      1
-##   text2       0           0        0 1           0       0           0      0
-##   text3       0           0        0 1           0       0           0      0
-##   text4       0           0        0 0           0       0           0      0
-##   text5       0           0        0 1           0       0           0      0
+## docs    nova rodada ibope confirma @brunocovas liderança isolada paulo mostra
+##   text1    1      1     1        1           1         1       1     1      1
+##   text2    0      0     0        0           0         0       0     1      0
+##   text3    0      0     0        0           0         0       0     1      0
+##   text4    0      0     0        0           0         0       0     1      0
+##   text5    0      0     0        0           1         0       0     1      0
 ##        features
-## docs    investir instituições
-##   text1        1            1
-##   text2        0            0
-##   text3        0            0
-##   text4        0            0
-##   text5        0            0
-## [ reached max_nfeat ... 16,934 more features ]
+## docs    confia
+##   text1      1
+##   text2      0
+##   text3      0
+##   text4      0
+##   text5      0
+## [ reached max_nfeat ... 16,937 more features ]
 ```
 
 ## Analysing some hashtags
@@ -182,18 +175,18 @@ head(tag_fcm.boulos)
 ```
 ## Feature co-occurrence matrix of: 6 by 6 features.
 ##                            features
-## features                    #virasp #boulos50 #virasp50 #viradailustrada50
-##   #virasp                         0         3         0                  0
-##   #boulos50                       0         0        99                  1
-##   #virasp50                       0         0         1                  1
-##   #viradailustrada50              0         0         0                  0
-##   #mulheresnocorrecomboulos       0         0         0                  0
-##   #quemtemmedodossemteto          0         0         0                  0
+## features                    #boulos50 #virasp50 #virasp #viradailustrada50
+##   #boulos50                         0       109       3                  1
+##   #virasp50                         0         1       0                  1
+##   #virasp                           0         0       0                  0
+##   #viradailustrada50                0         0       0                  0
+##   #mulheresnocorrecomboulos         0         0       0                  0
+##   #quemtemmedodossemteto            0         0       0                  0
 ##                            features
 ## features                    #mulheresnocorrecomboulos #quemtemmedodossemteto
-##   #virasp                                           0                      0
 ##   #boulos50                                         1                      1
 ##   #virasp50                                         1                      1
+##   #virasp                                           0                      0
 ##   #viradailustrada50                                1                      0
 ##   #mulheresnocorrecomboulos                         0                      0
 ##   #quemtemmedodossemteto                            0                      0
@@ -261,7 +254,8 @@ Now let us make a new graphic. Here we are counting the importance of each hasht
 
 
 ```r
-tstat_freq <- textstat_frequency(tag.dfm.all, n = 15, groups = "screen_name")
+tstat_freq <- textstat_frequency(tag.dfm.all, 
+                                 n = 15, groups = "screen_name")
 ```
 
 Then we do some coding using `ggplot2`, so we can see how it looks like:
@@ -271,7 +265,8 @@ Then we do some coding using `ggplot2`, so we can see how it looks like:
 library(ggplot2)
 tag.dfm.all %>% 
   textstat_frequency(n = 15) %>% 
-  ggplot(aes(x = reorder(feature, frequency), y = frequency)) +
+  ggplot(aes(x = reorder(feature, frequency), 
+             y = frequency)) +
   geom_point() +
   coord_flip() +
   labs(x = NULL, y = "Frequency") +
@@ -327,7 +322,9 @@ boulos.user.fcm <- fcm(boulos.user.dfm)
 View(boulos.user.fcm)
 
 boulos.user.plot <- fcm_select(boulos.user.fcm, pattern = topuser.boulos)
-textplot_network(boulos.user.plot, min_freq = 0.1, edge_color = "orange", edge_alpha = 0.8, edge_size = 5)
+textplot_network(boulos.user.plot, min_freq = 0.1, 
+                 edge_color = "orange", edge_alpha = 0.8, 
+                 edge_size = 5)
 ```
 
 
@@ -345,7 +342,8 @@ head(topuser.covas)
 covas.user.fcm <- fcm(covas.user.dfm)
 View(covas.user.fcm)
 
-covas.user.plot <- fcm_select(covas.user.fcm, pattern = topuser.covas)
+covas.user.plot <- fcm_select(covas.user.fcm, 
+                              pattern = topuser.covas)
 textplot_network(covas.user.plot, 
                  min_freq = 0.1, 
                  edge_color = "pink3", 

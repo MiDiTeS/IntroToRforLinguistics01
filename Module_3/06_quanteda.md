@@ -145,10 +145,37 @@ The result is something like
 
 ![Keywords comparisson](images/key.png)
 
+# Some collocates
+
+The command `textstat_collocations` calculates n-grams based on a corpus previously created. Unfortunately, for the time being the only calculation possible is `lambda`. 
 
 
+```r
+tri.grams<-textstat_collocations(
+  boulos.corpus,
+  method = "lambda",
+  size = 3,
+  min_count = 5,
+  smoothing = 0.5,
+  tolower = TRUE)
+```
+
+The result is something similar to:
 
 
+```r
+head(tri.grams)
+```
+
+```
+##       collocation count count_nested length    lambda        z
+## 1     não para de     8            0      3 11.117795 5.407809
+## 2    para mais ou    14            0      3  7.132262 4.938017
+## 3  apoio a boulos    12            0      3  5.054780 4.731241
+## 4 maior cidade do    28            0      3  5.089345 4.534803
+## 5        esse é o    30            0      3  3.613462 4.501427
+## 6        essa é a    16            0      3  3.445065 4.434219
+```
 
 
 

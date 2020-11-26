@@ -147,10 +147,25 @@ The result is something like
 
 ![Keywords comparisson](images/key.png)
 
+# Some collocates
 
+The command `textstat_collocations` calculates n-grams based on a corpus previously created. Unfortunately, for the time being the only calculation possible is `lambda`. 
 
+```{r trigrams1, eval=FALSE,echo=TRUE}
+tri.grams<-textstat_collocations(
+  boulos.corpus,
+  method = "lambda",
+  size = 3,
+  min_count = 5,
+  smoothing = 0.5,
+  tolower = TRUE)
+```
 
+The result is something similar to:
 
+```{r trigrams2}
+head(tri.grams)
+```
 
 
 

@@ -1,6 +1,6 @@
 #' ---
 #' title: "Quanteda and Twitter"
-#' author: "| Rodrigo Esteves de Lima-Lopes \n| State University of Campinas \n| #rll307@unicamp.br\n"
+#' author: "| Rodrigo Esteves de Lima-Lopes \n| State University of Campinas \n| rll307@unicamp.br\n"
 #' output:
 #'   pdf_document:
 #'     number_sections: yes
@@ -8,8 +8,8 @@
 #'     keep_md: yes
 #'     extra_dependencies: ["float"]
 #' ---
-## ----setup, include=FALSE-------------------------------------
-
+## ----setup, include=FALSE---------------------------
+ 
 #' # Introduction
 #' 
 #' [Quanteda](https://quanteda.io/) is a package for managing and analyse text quantitatively. It is quite easy to use and will bring us a number of interesting functions. 
@@ -24,7 +24,7 @@
 #' 
 #' I will download two [Twitter](https://twitter.com/) timelines: [GuilhermeBoulos](https://twitter.com/GuilhermeBoulos) and [brunocovas](https://twitter.com/brunocovas). Both are candidates in the second round of São Paulo's mayor elections. 
 #' 
-## ---- scraping, eval=FALSE,echo=TRUE--------------------------
+## ---- scraping, eval=FALSE,echo=TRUE----------------
 ## library(rtweet)
 ## covas <- get_timelines("brunocovas", n = 3200)
 ## boulos <- get_timelines("GuilhermeBoulos", n = 3200)
@@ -43,7 +43,7 @@
 #' 1. Cova's Tweets
 #' 1. All together
 #' 
-## ----creating.corpora, eval=FALSE,echo=TRUE-------------------
+## ----creating.corpora, eval=FALSE,echo=TRUE---------
 ## boulos.corpus<-corpus(boulos)
 ## covas.corpus<-corpus(covas)
 ## all.corpora<-corpus(boulos_and_covas)
@@ -51,7 +51,7 @@
 #' 
 #' ## Creating a network of hashtags for each candidate
 #' 
-## ----DFM1, eval=FALSE,echo=TRUE-------------------------------
+## ----DFM1, eval=FALSE,echo=TRUE---------------------
 ## boulos.dfm<-dfm(boulos.corpus,
 ##                 remove_punct = TRUE,
 ##                 case_insensitive=TRUE,
@@ -68,11 +68,11 @@
 ##              verbose = TRUE)
 
 #' 
-## ----view_DFM1------------------------------------------------
+## ----view_DFM1--------------------------------------
 head(boulos.dfm,5)
 
 #' 
-## ----view_DFM2------------------------------------------------
+## ----view_DFM2--------------------------------------
 head(all.dfm,5)
 
 #' 
@@ -83,38 +83,38 @@ head(all.dfm,5)
 #' 1. Select the hashtags using the command `dfm_select`
 #' 1. Select the 50 more frequent using `topfeatures` command
 #' 
-## ---- hash01,eval=FALSE,echo=TRUE-----------------------------
+## ---- hash01,eval=FALSE,echo=TRUE-------------------
 ## tag.dfm.boulos <- dfm_select(boulos.dfm, pattern = ("#*"))
 ## toptag.boulos <- names(topfeatures(tag.dfm.boulos, 50))
 
 #' 
 #' Let us see the result:
 #' 
-## ----view_hash01----------------------------------------------
+## ----view_hash01------------------------------------
 head(toptag.boulos)
 
 #' 
 #' 
 #' Now let us construct a feature-occurrence matrix for the hashtags
 #' 
-## ----hash02,eval=FALSE,echo=TRUE------------------------------
+## ----hash02,eval=FALSE,echo=TRUE--------------------
 ## tag_fcm.boulos <- fcm(tag.dfm.boulos)
 
 #' 
 #' Now let us see it:
-## ----view_hash02----------------------------------------------
+## ----view_hash02------------------------------------
 head(tag_fcm.boulos)
 
 #' 
 #' First let us make a FCM only with the top hashtags
 #' 
-## ----top_boulos_f, eval=FALSE,echo=TRUE-----------------------
+## ----top_boulos_f, eval=FALSE,echo=TRUE-------------
 ## topgat_fcm.boulos <- fcm_select(tag_fcm.boulos, pattern = toptag.boulos )
 
 #' 
 #' And then we make our network
 #' 
-## ----top_boulos_n, eval=FALSE,echo=TRUE-----------------------
+## ----top_boulos_n, eval=FALSE,echo=TRUE-------------
 ## textplot_network(topgat_fcm.boulos,
 ##                  min_freq = 0.1,
 ##                  edge_alpha = 0.8,
@@ -127,7 +127,7 @@ head(tag_fcm.boulos)
 #' 
 #' Now let us see how it works for Covas, all in a single batch of commands:
 #' 
-## ----covas_net,eval=FALSE,echo=TRUE---------------------------
+## ----covas_net,eval=FALSE,echo=TRUE-----------------
 ## tag.dfm.covas <- dfm_select(covas.dfm, pattern = ("#*"))
 ## toptag.covas <- names(topfeatures(tag.dfm.covas, 50))
 ## tag_fcm.covas <- fcm(tag.dfm.covas)
@@ -143,7 +143,7 @@ head(tag_fcm.boulos)
 #' 
 #' Now let us do the two together. Again in a single script:
 #' 
-## ----net_all, eval=FALSE,echo=TRUE----------------------------
+## ----net_all, eval=FALSE,echo=TRUE------------------
 ## tag.dfm.all <- dfm_select(all.dfm, pattern = ("#*"))
 ## toptag.all <- names(topfeatures(tag.dfm.all, 50))
 ## tag_fcm.all <- fcm(tag.dfm.all)
@@ -162,17 +162,19 @@ head(tag_fcm.boulos)
 #' 
 #' Now let us make a new graphic. Here we are counting the importance of each hashtag. 
 #' 
-## ----counting, eval=FALSE,echo=TRUE---------------------------
-## tstat_freq <- textstat_frequency(tag.dfm.all, n = 15, groups = "screen_name")
+## ----counting, eval=FALSE,echo=TRUE-----------------
+## tstat_freq <- textstat_frequency(tag.dfm.all,
+##                                  n = 15, groups = "screen_name")
 
 #' 
 #' Then we do some coding using `ggplot2`, so we can see how it looks like:
 #' 
-## ----plot_01, eval=FALSE,echo=TRUE----------------------------
+## ----plot_01, eval=FALSE,echo=TRUE------------------
 ## library(ggplot2)
 ## tag.dfm.all %>%
 ##   textstat_frequency(n = 15) %>%
-##   ggplot(aes(x = reorder(feature, frequency), y = frequency)) +
+##   ggplot(aes(x = reorder(feature, frequency),
+##              y = frequency)) +
 ##   geom_point() +
 ##   coord_flip() +
 ##   labs(x = NULL, y = "Frequency") +
@@ -185,7 +187,7 @@ head(tag_fcm.boulos)
 #' 
 #' Now, let us make a general cloud of hashtags:
 #' 
-## ----cloud01,eval=FALSE,echo=TRUE-----------------------------
+## ----cloud01,eval=FALSE,echo=TRUE-------------------
 ## set.seed(132)
 ## textplot_wordcloud(tag.dfm.all, max_words = 100)
 
@@ -196,12 +198,12 @@ head(tag_fcm.boulos)
 #' 
 #' This code will make some comparison:
 #' 
-## ---- dfm_cloud,eval=FALSE,echo=TRUE--------------------------
+## ---- dfm_cloud,eval=FALSE,echo=TRUE----------------
 ## dfm.hash.all <- dfm(all.corpora, select = "#*", groups = "screen_name")
 
 #' 
 #' Now we plot it:
-## ----plot_cloud_all2,eval=FALSE,echo=TRUE---------------------
+## ----plot_cloud_all2,eval=FALSE,echo=TRUE-----------
 ## textplot_wordcloud(dfm.hash.all,
 ##                    comparison = TRUE,
 ##                    max_words = 200,
@@ -215,7 +217,7 @@ head(tag_fcm.boulos)
 #' We can use the same methodology to study users interaction. The difference we are going to change the search for `*#` to `*@`. Let us start by Guilherme Boulos, but in a single command:
 #' 
 #' 
-## ---- boulos.users.1, eval=FALSE,echo=TRUE--------------------
+## ---- boulos.users.1, eval=FALSE,echo=TRUE----------
 ## 
 ## boulos.user.dfm <- dfm_select(boulos.dfm, pattern = "@*")
 ## topuser.boulos <- names(topfeatures(boulos.user.dfm, 50))
@@ -225,7 +227,9 @@ head(tag_fcm.boulos)
 ## View(boulos.user.fcm)
 ## 
 ## boulos.user.plot <- fcm_select(boulos.user.fcm, pattern = topuser.boulos)
-## textplot_network(boulos.user.plot, min_freq = 0.1, edge_color = "orange", edge_alpha = 0.8, edge_size = 5)
+## textplot_network(boulos.user.plot, min_freq = 0.1,
+##                  edge_color = "orange", edge_alpha = 0.8,
+##                  edge_size = 5)
 
 #' 
 #' 
@@ -234,7 +238,7 @@ head(tag_fcm.boulos)
 #' ![Boulos' most influent users](images/boulosusers.png)
 #' Now let us do the same for Bruno Covas
 #' 
-## ---- covas.users.1, eval=FALSE,echo=TRUE---------------------
+## ---- covas.users.1, eval=FALSE,echo=TRUE-----------
 ## covas.user.dfm <- dfm_select(covas.dfm, pattern = "@*")
 ## topuser.covas <- names(topfeatures(covas.user.dfm, 50))
 ## head(topuser.covas)
@@ -242,7 +246,8 @@ head(tag_fcm.boulos)
 ## covas.user.fcm <- fcm(covas.user.dfm)
 ## View(covas.user.fcm)
 ## 
-## covas.user.plot <- fcm_select(covas.user.fcm, pattern = topuser.covas)
+## covas.user.plot <- fcm_select(covas.user.fcm,
+##                               pattern = topuser.covas)
 ## textplot_network(covas.user.plot,
 ##                  min_freq = 0.1,
 ##                  edge_color = "pink3",

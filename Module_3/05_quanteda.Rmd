@@ -168,7 +168,8 @@ And the result is bellow
 Now let us make a new graphic. Here we are counting the importance of each hashtag. 
 
 ```{r counting, eval=FALSE,echo=TRUE}
-tstat_freq <- textstat_frequency(tag.dfm.all, n = 15, groups = "screen_name")
+tstat_freq <- textstat_frequency(tag.dfm.all, 
+                                 n = 15, groups = "screen_name")
 ```
 
 Then we do some coding using `ggplot2`, so we can see how it looks like:
@@ -177,7 +178,8 @@ Then we do some coding using `ggplot2`, so we can see how it looks like:
 library(ggplot2)
 tag.dfm.all %>% 
   textstat_frequency(n = 15) %>% 
-  ggplot(aes(x = reorder(feature, frequency), y = frequency)) +
+  ggplot(aes(x = reorder(feature, frequency), 
+             y = frequency)) +
   geom_point() +
   coord_flip() +
   labs(x = NULL, y = "Frequency") +
@@ -230,7 +232,9 @@ boulos.user.fcm <- fcm(boulos.user.dfm)
 View(boulos.user.fcm)
 
 boulos.user.plot <- fcm_select(boulos.user.fcm, pattern = topuser.boulos)
-textplot_network(boulos.user.plot, min_freq = 0.1, edge_color = "orange", edge_alpha = 0.8, edge_size = 5)
+textplot_network(boulos.user.plot, min_freq = 0.1, 
+                 edge_color = "orange", edge_alpha = 0.8, 
+                 edge_size = 5)
 ```
 
 
@@ -247,7 +251,8 @@ head(topuser.covas)
 covas.user.fcm <- fcm(covas.user.dfm)
 View(covas.user.fcm)
 
-covas.user.plot <- fcm_select(covas.user.fcm, pattern = topuser.covas)
+covas.user.plot <- fcm_select(covas.user.fcm, 
+                              pattern = topuser.covas)
 textplot_network(covas.user.plot, 
                  min_freq = 0.1, 
                  edge_color = "pink3", 
