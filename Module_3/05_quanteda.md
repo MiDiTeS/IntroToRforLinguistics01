@@ -1,4 +1,4 @@
-# Quanteda and Twitter
+# Quanteda and Twitter 
 
 Rodrigo Esteves de Lima Lopes \
 *Campinas State University* \
@@ -312,19 +312,51 @@ textplot_wordcloud(dfm.hash.all,
 
 ![It is a cloud!](images/cloud_02.png)
 
+## Analysing user interactions
+
+We can use the same methodology to study users interaction. The difference we are going to change the search for `*#` to `*@`. Let us start by Guilherme Boulos, but in a single command:
 
 
 
+```r
+boulos.user.dfm <- dfm_select(boulos.dfm, pattern = "@*")
+topuser.boulos <- names(topfeatures(boulos.user.dfm, 50))
+View(topuser.boulos)
+
+boulos.user.fcm <- fcm(boulos.user.dfm)
+View(boulos.user.fcm)
+
+boulos.user.plot <- fcm_select(boulos.user.fcm, pattern = topuser.boulos)
+textplot_network(boulos.user.plot, min_freq = 0.1, edge_color = "orange", edge_alpha = 0.8, edge_size = 5)
+```
 
 
+The result would be something similar to it:
+
+![Boulos' most influent users](images/boulosusers.png)
+Now let us do the same for Bruno Covas
 
 
+```r
+covas.user.dfm <- dfm_select(covas.dfm, pattern = "@*")
+topuser.covas <- names(topfeatures(covas.user.dfm, 50))
+head(topuser.covas)
+
+covas.user.fcm <- fcm(covas.user.dfm)
+View(covas.user.fcm)
+
+covas.user.plot <- fcm_select(covas.user.fcm, pattern = topuser.covas)
+textplot_network(covas.user.plot, 
+                 min_freq = 0.1, 
+                 edge_color = "pink3", 
+                 edge_alpha = 0.8, 
+                 edge_size = 5)
+```
 
 
+The result should be something similar to:
 
-
-
-
+![Covas' users](images/covasusers.png)
 
 
 
