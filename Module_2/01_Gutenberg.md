@@ -251,7 +251,7 @@ length(M1.C)
 ```
 ## [1] 1
 ```
-Not to small caps
+Now to small caps
 
 ```r
 M1.CB <- tolower(M1.C)
