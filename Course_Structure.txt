@@ -155,6 +155,10 @@
 │  ├── 06_quanteda.pdf
 │  ├── 06_quanteda.R
 │  ├── 06_quanteda.Rmd
+│  ├── 07_Quanteda.md
+│  ├── 07_Quanteda.pdf
+│  ├── 07_Quanteda.R
+│  ├── 07_Quanteda.Rmd
 │  ├── data
 │  │  ├── austen.txt
 │  │  ├── melville.txt
@@ -172,14 +176,28 @@
 │  │  ├── cloud_02.png
 │  │  ├── cloud_portuguese.png
 │  │  ├── cloud_spanish.png
+│  │  ├── comparisson1.png
 │  │  ├── covasusers.png
 │  │  ├── covaswl.png
 │  │  ├── DTM.jpg
 │  │  ├── hash01.png
 │  │  ├── key.png
+│  │  ├── net_words.png
 │  │  ├── network01.png
 │  │  ├── network02.png
 │  │  ├── network03.png
 │  │  └── video_preview.png
+│  └── README.md
+├── Module_4
+│  ├── 01_tm_dendrogram.md
+│  ├── 01_tm_dendrogram.pdf
+│  ├── 01_tm_dendrogram.R
+│  ├── 01_tm_dendrogram.Rmd
+│  ├── images
+│  │  ├── ass_boulos.png
+│  │  ├── ass_news.png
+│  │  ├── cluster_boulos.png
+│  │  ├── cluster_boulos2.png
+│  │  └── Cluster_boulos3.png
 │  └── README.md
 └── README.md
