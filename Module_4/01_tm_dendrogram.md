@@ -1,7 +1,8 @@
 
-# Using tm package for dendogram and associacions
+# Using tm package for a dendrogram and associations
 
-Rodrigo Esteves de Lima Lopes \
+
+ Rodrigo Esteves de Lima Lopes \
 *Campinas State University* \
 [rll307@unicamp.br](mailto:rll307@unicamp.br)
 
@@ -62,7 +63,8 @@ boulos.v <- boulos$text
 corpus.cluster <- Corpus(VectorSource(boulos.v))
 ```
 
-Now we are going to make a series of transformations, using `tm_map`, which applies changes into the corpus and a series of self-explaing functions:
+Now we are going to make a series of transformations, using `tm_map`, which applies changes into the corpus and a
+series of self-explaining functions:
 
 
 ```r
@@ -74,7 +76,7 @@ corpus.cluster <- tm_map(corpus.cluster, removePunctuation)
 corpus.cluster <- tm_map(corpus.cluster, function(x)removeWords(x,stopwords("pt")))
 ```
 
-Now we are going to create a dtm for usinf in the calculations
+Now we are going to create a dtm for using in the calculations
 
 
 ```r
