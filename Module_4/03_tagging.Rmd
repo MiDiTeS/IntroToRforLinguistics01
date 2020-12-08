@@ -62,7 +62,7 @@ Tagged.Interviews <- udpipe_annotate(ud_model,
                           doc_id = base$Title) %>% as.data.frame()
 ```
 
-## Which are the more frequent verbs?
+## Which are the most frequent verbs?
 
 ```{r verbs, eval=FALSE,echo=TRUE}
 Verbs <- subset(Tagged.Interviews, upos %in% c("VERB")) 
@@ -108,7 +108,7 @@ sub_verb <- keywords_phrases(x = Tagged.Interviews$upos,
                              detailed = FALSE)
 ```
 
-## Observing nouns+adjectives 
+## Observing (nouns and adjectives)
 
 ```{r nouns+adjectives, eval=FALSE,echo=TRUE}
 sub.adj <- keywords_phrases(x = Tagged.Interviews$upos,

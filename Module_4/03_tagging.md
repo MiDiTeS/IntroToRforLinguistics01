@@ -2,7 +2,7 @@
 
 Rodrigo Esteves de Lima Lopes \
 *Campinas State University* \
-[rll307@unicamp.br](mailto:rll307@unicamp.br)
+[rll307@unicamp.br](mailto:rll307@unicamp.br
 
 # Introduction
 
@@ -57,7 +57,7 @@ Tagged.Interviews <- udpipe_annotate(ud_model,
                           doc_id = base$Title) %>% as.data.frame()
 ```
 
-## Which are the more frequent verbs?
+## Which are the most frequent verbs?
 
 
 ```r
@@ -106,7 +106,7 @@ sub_verb <- keywords_phrases(x = Tagged.Interviews$upos,
                              detailed = FALSE)
 ```
 
-## Observing nouns+adjectives 
+## Observing (nouns and adjectives)
 
 
 ```r
