@@ -8,7 +8,7 @@ This is the ongoing first try of a R course applied to language studies. Please 
 
 Initially, it was thought as a set of lessons to my graduate students at [IEL](http://www.iel.unicamp.br)/[UNICAMP](https://www.unicamp.br/unicamp/). However, the possibility of further discussion with fellow researchers drove me to let it open to the community. So, if you are not a MA student or a PhD student/candidate under my supervision, you might skip the first module. 
 
-## What is it going to cover
+## What it is going to cover
 
 This module is going to cover some tools for corpus and discourse analysis using **R**'s language and packages. It is not intended to be a very advanced set of tutorials, since it is mostly introducing the tools for the community. 
 
